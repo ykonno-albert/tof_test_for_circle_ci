@@ -1,8 +1,11 @@
 apply plugin: 'java'
 apply plugin: 'idea'
+apply plugin: 'application'
 
 def defaultEncoding = 'UTF-8'
 [compileJava, compileTestJava]*.options*.encoding = defaultEncoding
+
+mainClassName = 'entry.EntryPoint'
 
 repositories {
     mavenCentral()
